@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Hello World</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <style>
+        html {
+            background-color: #2a2a2a;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        .active {
+            color: black;
+        }
+        nav a {
+            text-decoration: none;
+            color: azure;
+            text-transform: uppercase;
+        }
+        nav ul {
+            list-style: none;
+        }
+        p {
+            color: azure;
+        }
+        h1 {
+            color: azure;
+            font-weight: 100;
+        }
+        body {
+            margin: 0;
+        }
+        nav li {
+            display: inline-block;
+            margin-left: 50px;
+            padding-bottom: 20px;
+            padding-right: 25px;
+        }
+        nav {
+            float: right;
+            padding-top: 15px;
+        }
+        .main {
+            padding-left: 25px;
+        }
+            header::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+    </style>
+  </head>
+
+  <body>
+    <header>
+        <div class=navigationBar>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fullstackdeveloper.html">Full Stack Developer</a></li>
+                    <li><a class="active" href="computerprogramming.html">Computer Programmer</a></li>
+                    <li><a href="webdeveloper.html">Web Developer</a></li>
+                    <li><a href="ethicalhacker.html">Ethical Hacker</a></li>
+                    <li><a href="appdeveloper.html">App Developer</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main">
+        <h1>Computer Programming</h1>
+        <p>Here you can find information on Computer Programming.</p>
+    </div>
+  </body>
+
+</html>
