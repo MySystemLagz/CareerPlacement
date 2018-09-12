@@ -1,2 +1,0 @@
-# CareerPlacement
-Career Placement website
