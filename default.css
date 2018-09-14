@@ -47,3 +47,10 @@ nav {
     display: table;
     clear: both;
 }
+.sideinfo span {
+    font-size: .6em;
+    opacity: 70%;
+}
+.sideinfo {
+  padding-left: 25px;
+}
