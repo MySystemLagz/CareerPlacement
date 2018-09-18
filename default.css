@@ -1,5 +1,5 @@
 html {
-    background-color: dimgray;
+    background-image: url("orangegradient.png");
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
@@ -10,9 +10,11 @@ nav a {
     text-decoration: none;
     color: azure;
     text-transform: uppercase;
+    font-size: 18px;
 }
 nav ul {
     list-style: none;
+
 }
 p {
     color: azure;
@@ -20,7 +22,9 @@ p {
 }
 h1 {
     color: azure;
+    font-size: 36px;
     font-weight: 100;
+    margin-top: 0;
 }
 h2 {
     color: azure;
@@ -42,7 +46,7 @@ nav {
 .main {
     padding-left: 25px;
 }
-    header::after {
+header::after {
     content: '';
     display: table;
     clear: both;

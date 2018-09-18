@@ -1,49 +1,114 @@
 <!DOCTYPE html>
 
-/* https://www.w3schools.com/howto/howto_css_flip_card.asp */
-
 <html lang="en">
   <head>
     <title>Hello World</title>
     <meta charset="utf-8">
+    <meta name="theme-color" content="darkslategray"> <!--Use this for tab color/theme-->
+    <!-- <link rel="icon" sizes="192x192" href="nice-highres.png"> Use this for chrome icon-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="default.css">
     <style>
-        
+        .card img {
+          height: 200px;
+          width: 200px;
+          display: inline-block;
+          vertical-align: middle;
+          background-color: orangered;
+          border-bottom-left-radius: 5px;
+          border-top-left-radius: 5px;
+        }
+        .cardcontent {
+          width: 400px;
+          height: 200px;
+          background-color: darkslategray;
+          padding-left: 15px;
+          box-sizing: border-box;
+          display: inline-block;
+          vertical-align: middle;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
+        .cards li {
+          display: inline-block;
+        }
+        .cards ul {
+          list-style: none;
+        }
+        .cards {
+          padding-left: 25px;
+          float: right;
+        }
+        .card span {
+          float: right;
+          padding-right: 25px;
+        }
+        .cardcontent p {
+          width: 90%;
+        }
+        .card {
+          padding-bottom: 5px;
+        }
     </style>
   </head>
 
   <body>
     <header>
-        <div class=navigationBar>
-            <nav>
-                <ul>
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="fullstackdeveloper.html">Full Stack Developer</a></li>
-                    <li><a href="computerprogramming.html">Computer Programmer</a></li>
-                    <li><a href="webdeveloper.html">Web Developer</a></li>
-                    <li><a href="ethicalhacker.html">Ethical Hacker</a></li>
-                    <li><a href="appdeveloper.html">App Developer</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class=navigationBar>
+        <nav>
+          <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li style="padding-right: 50px"><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <div class="main">
-        <h1>My Results</h1>
-        <img src="Results.png" alt="Results">
+      <h1>Careers</h1>
     </div>
-    <div class="flipcard">
-        <div class="innercard">
-            <div class="frontcard">
-                <img src="#" alt="Avatar Image" style="width:500px;height:500px">
-            </div>
-            <div class="backcard">
-                <h2>Title Text</h2>
-                <p>Description</p>
-                <p>Salary</p>
-            </div>
+    <ul class="cards">
+      <li><div class="card">
+        <img src="computerprogrammer.jpeg" alt="Computer code">
+        <div class="cardcontent">
+          <h2>Computer Programmer <span>$60787</span></h2>
+          <p>A computer programmer is one how can write the code for a specific piece of software.</p>
+          <p>Companys that hire include Kastech and FiStaff.</p>
         </div>
-    </div>
+      </div></li>
+      <li><div class="card">
+        <img src="fullstackdeveloper.jpeg" alt="Full stack developer">
+        <div class="cardcontent">
+          <h2>Full Stack Developer <span>$95425</span></h2>
+          <p>A full stack developer is one who has the ability work with the front and back end of development.</p>
+          <p>Companys that hire include PreCheck, Inc and Macquarie Group Limited.</p>
+        </div>
+      </div></li>
+      <li><div class="card">
+        <img src="webdeveloper.jpeg" alt="Web developer">
+        <div class="cardcontent">
+          <h2>Web Developer <span>$81917</span></h2>
+          <p>Web developers are responsible for creating a website's layout and functionality.</p>
+          <p>Companys that hire include Primary Arms, LLC and Amegy Bank.</p>
+        </div>
+      </div></li>
+      <li><div class="card">
+        <img src="whitehathacker.jpeg" alt="White hat hacker">
+        <div class="cardcontent">
+          <h2>Ethical Hacker <span>$99000</span></h2>
+          <p>Ethical hackers look for security vulnerabilities and exploits in a system with permission from the owner
+            that a black hat hacker could find.</p>
+          <p>Companys that hire include Centra Technology and Calpine.</p>
+        </div>
+      </div></li>
+      <li><div class="card">
+        <img src="appdeveloper.jpg" alt="App developer">
+        <div class="cardcontent">
+          <h2>App Developer <span>$71876</span></h2>
+          <p>App developers are software engineers that create apps for desktop and mobile devices.</p>
+          <p>Companys that hire include CoConstruct and 2nd.MD.</p>
+        </div>
+      </div></li>
+    </ul>
   </body>
-
 </html>
